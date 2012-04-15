@@ -1,10 +1,10 @@
 #! /bin/sh 
 
-project="[phonegap projectnumber]";
-username="[phonegap username]";
-password="[phonegap password]";
-appPath="[path to www folder]"; 
-projectPath="[path where you want the apk file]";
+project="101055";
+username="myddinquiries@gmail.com";
+password="xenadrine";
+appPath="www"; 
+projectPath="downloads";
  
 APIPATH="https://build.phonegap.com/api/v1/apps";
 FILEPATH="https://build.phonegap.com/apps/";
@@ -14,7 +14,8 @@ creds="$username:$password";
 
 ##commit changes
 echo "Forcing changes to github";
-cd $appPath
+#cd $appPath
+null=$(git add . );
 null=$(git commit -m "auto commit as part of script");
 null=$(git push origin master);
 echo "Done";

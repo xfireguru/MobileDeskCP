@@ -1,0 +1,57 @@
+#! /bin/sh 
+
+project="102449";
+username="myddinquiries@gmail.com";
+password="xenadrine";
+appPath="[path to www folder]"; 
+projectPath="[path where you want the apk file]";
+ 
+APIPATH="https://build.phonegap.com/api/v1/apps";
+FILEPATH="https://build.phonegap.com/apps/";
+
+APIcall="$APIPATH/$project"
+creds="$username:$password";
+
+##commit changes
+echo "Forcing changes to github";
+cd $appPath
+null=$(git commit -m "auto commit as part of script");
+null=$(git push origin master);
+echo "Done";
+
+cd $projectPath
+
+##Request Phonegap data
+echo "Requesting Project Data.";
+package=$(curl -s -u $creds  $APIcall | grep -Po '"package":.*?[^\\],');
+title=$(curl -s -u $creds  $APIcall | grep -Po '"title":.*?[^\\],');
+title=${title##*:};
+title=$(echo $title|sed 's/,//g');
+title=$(echo $title|sed 's/"//g');
+package=${package##*:};
+package=$(echo $package|sed 's/,//g');
+package=$(echo $package|sed 's/"//g');
+echo "Done. ";
+
+##Request Rebuild
+echo "Requesting Rebuild.";
+request=$(curl -s -u $creds -X PUT -d 'data={"pull":"true"}' $APIcall);
+echo "Done. ";
+donecheck="";
+
+
+echo "\nWaiting for rebuild to be done.";
+while [$donecheck -eq ""]
+do
+	echo ".";
+	sleep 10;
+	donecheck=$(curl -s -u $creds  $APIcall | grep -Po '"android":"complete"');	
+done
+echo "Done. Now downloading.\n";
+
+##Download File
+download=$(curl -L -s -u $creds -o ~/cross_platform_apps/MobileDeskCP/$title-debug.apk);
+
+##Install on Device
+adb uninstall $package
+adb install -r ./$title-debug.apk

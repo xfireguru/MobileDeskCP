@@ -13,6 +13,9 @@
 				background-image:url('img/background.png');
 				background-repeat:no-repeat;
 			}
+			h1, h2, h3{
+				text-rendering:optimizeLegibility;
+			}
 			p.disclaimer{
 			color:#FF0000;
 			font-size:small;
@@ -61,15 +64,42 @@
 	  		}
 	  		
   		</style>
+  		<script>
+			$(document).ready(function() {
+				processTaggedImages();
+			});
+
+			// Query the device pixel ratio.
+			//-------------------------------
+			function getDevicePixelRatio() {
+				if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
+				return window.devicePixelRatio;
+			}  		
+  		</script>
+  		<script>
+			// Only process tagged document images
+			//-------------------------------------
+			function processTaggedImages() {
+				if(getDevicePixelRatio() > 1) {
+					var images = $('img.highRes'); // Only images with class 'highRes'
+
+					// Scale each image's width to 50%. Height will follow.
+					for(var i = 0; i < images.length; i++) {
+						images.eq(i).width(images.eq(i).width() / 2);
+
+					}
+				}
+			}	
+		</script>
 	</head>
 	<body>
 		<div data-role="page" id="home" data-theme="b">
 			<div data-role="header">
-				<img src="img/title_image.png">
+				<img src="img/title_image.png" class="highRes">
 			</div><!-- /header -->
 			<div data-role="content">
 				<div class="ui-grid-a" align="center">
-					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc"></a></div>
+					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc highRes"></a></div>
 					<div class="ui-block-b"><a href="#banks" data-transition="flip"><img class="bank_dir"></a></div>				
 					<div class="ui-block-a"><a href="#insurance" data-transition="flip"><img class="ins_dir"></a></div>
 					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit"></a></div>				

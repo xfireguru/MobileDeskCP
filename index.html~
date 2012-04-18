@@ -17,10 +17,10 @@
 				text-rendering:optimizeLegibility;
 			}
 			.headerImage{
-				width:180px;
-				height:36px;
-				-webkit-background-size:180px 36px;
-				background:url('img/title_image.png');
+				width:90px;
+				height:18px;
+				-webkit-background-size:90px 18px;
+				background:url('img/title_image_low.png');
 				border-style:none;
 			}
 			@media screen and (-webkit-device-pixel-ratio: 2){

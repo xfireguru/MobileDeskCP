@@ -23,76 +23,62 @@
 			#jinfo.ui-page-active {
 				display: block;
 			}	
-			/* webkit seal
-*******************************************************************************/
-.webkit-seal {
-  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #9e76e8), color-stop(1, #6224de));
-  color: #fff;
-  height: 90px;
-  color: #fff;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 6;
-  padding: 0;
-  text-align: center;
-  text-shadow: 0px -1px 1px #473569;
-  width: 150px;
-  -webkit-mask-image: url("img/seal.png");
-  -webkit-mask-position: center center;
-  -webkit-mask-repeat: no-repeat; }
-  .webkit-seal:hover {
-    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #8d69cf), color-stop(1, #561fc4));
-    cursor: pointer; }
-  .webkit-seal:active {
-    background: -webkit-gradient(radial, 50% 50%, 40, 50% 50%, 0, from(rgba(38, 76, 153, 0.2)), to(rgba(11, 23, 46, 0.2))), -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #7b5cb5), color-stop(1, #4b1bab)); }  		
+	  		.finance_calc{
+	  			width:120px;
+	  			height:120px;
+	  			background-image:url(img/pmt_calc_nofocus.png);
+	  			
+	  		}
+  			.finance_calc:hover{
+	  			background-image:url(img/pmt_calc_focus.png);
+	  		}
+	  		.bank_dir{
+	  			width:120px;
+	  			height:120px;
+	  			background-image:url(img/bank_directory_nofocus.png);
+	  			
+	  		}
+  			.bank_dir:hover{
+	  			background-image:url(img/bank_directory_focus.png);
+	  		}
+	  		.ins_dir{
+	  			width:120px;
+	  			height:120px;
+	  			background-image:url(img/insurance_directory_nofocus.png);
+	  			
+	  		}
+  			.ins_dir:hover{
+	  			background-image:url(img/insurance_directory_focus.png);
+	  		}
+	  		.submit{
+	  			width:120px;
+	  			height:120px;
+	  			background-image:url(img/submit_correction_nofocus.png);
+	  			
+	  		}
+  			.submit:hover{
+	  			background-image:url(img/submit_correction_focus.png);
+	  		}
+	  		
   		</style>
 	</head>
 	<body>
 		<div data-role="page" id="home" data-theme="b">
-		<script>
-		// This is your app's init method. Here's an example of how to use it
-function init() {
-    document.addEventListener("deviceready", onDR, false);
-} 
-function onDR(){
-    document.addEventListener("backbutton", backKeyDown, true);
-    //boot your app...
-}
-function backKeyDown() { 
-    // do something here if you wish
-    // alert('go back!');
-    navigator.notification.confirm(
-            	            'Do you want to quit', 
-      	                  onConfirmQuit, 
-	                        'QUIT TITLE', 
-                  	      'OK,Cancel'  
-            	        );
-		            }, true); 
-
-
-				    function onConfirmQuit(button){
-				       if(button == "1"){
-				        navigator.app.exitApp(); 
-				    }
-			    }
-}
-			</script>
 			<div data-role="header">
-				<h1>Mobile Desk Pro</h1>
+				<img src="img/title_image.png">
 			</div><!-- /header -->
-			<div data-role="content" align="center">
-				<div class="ui-grid-a" style="width:95%">				
-					<div class="ui-block-a"><p><a class="webkit-seal" href="#calculator" data-role="button" data-transition="flip">Finance Calculator</a></p></div>
-					<div class="ui-block-b"><p><a class="webkit-seal" href="#banks" data-role="button" data-transition="flip">Bank Directory</a></p></div>
-					<div class="ui-block-a"><p><a class="webkit-seal" href="#insurance" data-role="button" data-transition="flip">Insurance Directory</a></p></div>
-					<div class="ui-block-b"><p><a class="webkit-seal" href="#correction" data-role="button" data-transition="flip">Submit a Correction</a></p></div>
-				</div><!-- /grid -->				
+			<div data-role="content">
+				<div class="ui-grid-a" align="center">
+					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc"></a></div>
+					<div class="ui-block-b"><a href="#banks" data-transition="flip"><img class="bank_dir"></a></div>				
+					<div class="ui-block-a"><a href="#insurance" data-transition="flip"><img class="ins_dir"></a></div>
+					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit"></a></div>				
+				</div><!-- /grid -->
 			</div><!-- /content -->
-			<div data-role="footer">
-					<small>Copyright &copy; 2012 MyDigtialDealer, LLC.</small>
+			<div data-role="footer" data-theme="a">
+					<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
 			</div><!-- /footer -->
-		</div><!-- /home -->
+		</div><!-- /page -->
 		
 		<div data-role="page" id="calculator" data-add-back-btn="true" data-theme="b">
 			<div data-role="header">

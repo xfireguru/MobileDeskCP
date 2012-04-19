@@ -10,8 +10,8 @@
 }
 
 #home, #calculator, #banks, #insurance, #correction{
-				background:url('../img/background_grad.png');				
-				background-repeat:no-repeat;
+				background:url('../img/black_woven_seamless_tile.jpg');				
+				background-repeat:repeat;
 			}
 			h1, h2, h3{
 				text-rendering:optimizeLegibility;

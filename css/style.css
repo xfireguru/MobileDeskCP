@@ -25,7 +25,8 @@
 				background:url(../img/title_image_low.png);
 			}
 			p.disclaimer{
-			color:#FF0000;
+			color:#FFF;
+			font-weight:bold;
 			font-size:small;
 			}
 			#jinfo {

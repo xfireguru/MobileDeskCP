@@ -7,6 +7,7 @@
 				background-repeat:no-repeat;
 				}				
 }
+
 #home, #calculator, #banks, #insurance, #correction{
 				background:url('../img/background_grad_low.png');
 				width:320px;
@@ -36,36 +37,36 @@
 	  		.finance_calc{
 	  			width:120px;
 	  			height:120px;
-	  			background-image:url(img/pmt_calc_nofocus.png);
+	  			background-image:url(../img/pmt_calc_nofocus.png);
 	  			
 	  		}
   			.finance_calc:hover{
-	  			background-image:url(img/pmt_calc_focus.png);
+	  			background-image:url(../img/pmt_calc_focus.png);
 	  		}
 	  		.bank_dir{
 	  			width:120px;
 	  			height:120px;
-	  			background-image:url(img/bank_directory_nofocus.png);
+	  			background-image:url(../img/bank_directory_nofocus.png);
 	  			
 	  		}
   			.bank_dir:hover{
-	  			background-image:url(img/bank_directory_focus.png);
+	  			background-image:url(../img/bank_directory_focus.png);
 	  		}
 	  		.ins_dir{
 	  			width:120px;
 	  			height:120px;
-	  			background-image:url(img/insurance_directory_nofocus.png);
+	  			background-image:url(../img/insurance_directory_nofocus.png);
 	  			
 	  		}
   			.ins_dir:hover{
-	  			background-image:url(img/insurance_directory_focus.png);
+	  			background-image:url(../img/insurance_directory_focus.png);
 	  		}
 	  		.submit{
 	  			width:120px;
 	  			height:120px;
-	  			background-image:url(img/submit_correction_nofocus.png);
+	  			background-image:url(../img/submit_correction_nofocus.png);
 	  			
 	  		}
   			.submit:hover{
-	  			background-image:url(img/submit_correction_focus.png);
+	  			background-image:url(../img/submit_correction_focus.png);
 	  		}	  

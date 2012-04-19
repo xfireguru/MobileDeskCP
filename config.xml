@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.phonegap.getting.started"
+	version 	= "1.0.0">
+
+	<name>MobileDesk Pro</name>
+
+	<description>
+		MobileDesk Pro from MyDigitalDealer, LLC.
+	</description>
+
+	<author href="http://www.mydigitaldealer.com"
+		email="myddinquiries@gmail.com">
+		Sam
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>

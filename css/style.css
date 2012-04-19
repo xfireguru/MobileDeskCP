@@ -1,3 +1,8 @@
+.footer-wrapper{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
 @media screen and (-webkit-device-pixel-ratio: 2){
 				.headerImage{
 					background:url(../img/title_image.png);

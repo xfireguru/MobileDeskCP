@@ -22,9 +22,11 @@
 					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit" src="img/transparent.png"></a></div>				
 				</div><!-- /grid -->
 			</div><!-- /content -->
+			<div class='footer-wrapper'>			
 			<div data-role="footer" data-theme="a">
 					<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
 			</div><!-- /footer -->
+			</div>
 		</div><!-- /page -->
 		
 		<div data-role="page" id="calculator" data-add-back-btn="true" data-theme="a">
@@ -51,9 +53,6 @@
 					<h1>Lease Calculator</h1>
 					<p>Lease payment calculator will go in here later</p>				
 				</div>
-			</div>
-			<div data-role="footer">
-				<small>Copyright &copy; 2012 MyDigtialDealer, LLC.</small>
 			</div>
 		</div><!-- /calculator -->
 		
@@ -85,9 +84,6 @@
 			</ul>
 			</div><!--/content-primary -->	
 			</div>
-			<div data-role="footer">
-				<small>Copyright &copy; 2012 MyDigtialDealer, LLC.</small>			
-			</div>
 		</div><!-- /banks -->
 		
 		<div data-role="page" id="insurance" data-add-back-btn="true" data-theme="a">
@@ -117,9 +113,6 @@
 				</script>
 			</ul>			
 			</div>
-			<div data-role="footer">
-				<small>Copyright &copy; 2012 MyDigtialDealer, LLC.</small>
-			</div>
 		</div><!-- /insurance -->
 		
 		<div data-role="page" id="correction" data-add-back-btn="true" data-theme="a">
@@ -145,9 +138,6 @@
 				</div>
 				</form>
 			</div><!-- /content -->
-			<div data-role="footer">
-				<small>Copyright &copy; 2012 MyDigtialDealer, LLC.</small>
-			</div><!-- /footer -->
 		</div><!-- /correction -->
 		
 		<div id="jinfo" data-role="dialog" role="dialog" data-theme="a">

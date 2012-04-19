@@ -1,3 +1,6 @@
+html, body{
+	height:100%;
+}
 @media screen and (-webkit-device-pixel-ratio: 2){
 				.headerImage{
 					background:url(../img/title_image.png);
@@ -25,7 +28,8 @@
 				background:url(../img/title_image_low.png);
 			}
 			p.disclaimer{
-			color:#FF0000;
+			color:#FFF;
+			font-weight:bold;
 			font-size:small;
 			}
 			#jinfo {

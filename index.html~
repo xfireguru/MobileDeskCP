@@ -5,89 +5,21 @@
 		<title>Mobile Desk Pro</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-		<link rel="stylesheet" href="css/theme1.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>	
-		<style>
-			#home, #calculator, #banks, #insurance, #correction{
-				background-image:url('img/background.png');
-				background-repeat:no-repeat;
-			}
-			h1, h2, h3{
-				text-rendering:optimizeLegibility;
-			}
-			.headerImage{
-				width:150px;
-				height:25px;
-				-webkit-background-size:150px 25px;
-				background:url('img/title_image_low.png');
-				border-style:none;
-				background-color:#000;
-			}
-			@media screen and (-webkit-device-pixel-ratio: 2){
-				.headerImage{
-					background:url('img/title_image.png');
-				}
-			}
-			p.disclaimer{
-			color:#FF0000;
-			font-size:small;
-			}
-			#jinfo {
-				display: none;
-			}
-			#jinfo.ui-page-active {
-				display: block;
-			}	
-	  		.finance_calc{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(img/pmt_calc_nofocus.png);
-	  			
-	  		}
-  			.finance_calc:hover{
-	  			background-image:url(img/pmt_calc_focus.png);
-	  		}
-	  		.bank_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(img/bank_directory_nofocus.png);
-	  			
-	  		}
-  			.bank_dir:hover{
-	  			background-image:url(img/bank_directory_focus.png);
-	  		}
-	  		.ins_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(img/insurance_directory_nofocus.png);
-	  			
-	  		}
-  			.ins_dir:hover{
-	  			background-image:url(img/insurance_directory_focus.png);
-	  		}
-	  		.submit{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(img/submit_correction_nofocus.png);
-	  			
-	  		}
-  			.submit:hover{
-	  			background-image:url(img/submit_correction_focus.png);
-	  		}	  		
-  		</style>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	</head>
 	<body>
 		<div data-role="page" id="home" data-theme="b">
 			<div data-role="header">
-				<img class="headerImage">
+				<img class="headerImage" src="img/transparent.png">
 			</div><!-- /header -->
 			<div data-role="content">
 				<div class="ui-grid-a" align="center">
-					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc"></a></div>
-					<div class="ui-block-b"><a href="#banks" data-transition="flip"><img class="bank_dir"></a></div>				
-					<div class="ui-block-a"><a href="#insurance" data-transition="flip"><img class="ins_dir"></a></div>
-					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit"></a></div>				
+					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc" src="img/transparent.png"></a></div>
+					<div class="ui-block-b"><a href="#banks" data-transition="flip"><img class="bank_dir" src="img/transparent.png"></a></div>				
+					<div class="ui-block-a"><a href="#insurance" data-transition="flip"><img class="ins_dir" src="img/transparent.png"></a></div>
+					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit" src="img/transparent.png"></a></div>				
 				</div><!-- /grid -->
 			</div><!-- /content -->
 			<div data-role="footer" data-theme="a">

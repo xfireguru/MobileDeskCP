@@ -13,6 +13,11 @@
 				background:url('../img/black_woven_seamless_tile.jpg');				
 				background-repeat:repeat;
 			}
+.title{
+	font-face:sans-serif;
+	color:#fff;
+	font-weight:bold;
+}
 			h1, h2, h3{
 				text-rendering:optimizeLegibility;
 			}

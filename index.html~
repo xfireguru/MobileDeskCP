@@ -23,15 +23,15 @@
 				</div><!-- /grid -->
 			</div><!-- /content -->
 			<div class='footer-wrapper'>			
-			<div data-role="footer" data-theme="a">
-					<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
-			</div><!-- /footer -->
-			</div>
+				<div data-role="footer" data-theme="a">
+						<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
+				</div><!-- /footer -->
+			</div><!-- footer-wrapper -->
 		</div><!-- /page -->
 		
 		<div data-role="page" id="calculator" data-add-back-btn="true" data-theme="a">
 			<div data-role="header">
-				<h1>Finance Calculator</h1>			
+				<h3>Finance Calculator</h3>			
 			</div>
 			<div data-role="content">
 				<div data-role="collapsible" data-collapsed="false">

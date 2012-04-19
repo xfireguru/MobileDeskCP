@@ -4,13 +4,14 @@
 	width:100%;
 }
 .headerImage{
-	background:url(../img/title_image_low.png);
+	background-image:url(../img/title_image_low.png);
 	width:150px;
 	height:25px;
 }
-@media screen and (-webkit-device-pixel-ratio: 2){
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
 				.headerImage{
-					background:url(../img/title_image.png);
+					background-image:url(../img/title_image.png);
+					-webkit-background-size: 150px 25px;
 					width:150px;
 					height:25px;
 				}		

@@ -3,6 +3,9 @@
 	bottom:0px;
 	width:100%;
 }
+.headerImage{
+	background:url(../img/title_image_low.png);
+}
 @media screen and (-webkit-device-pixel-ratio: 2){
 				.headerImage{
 					background:url(../img/title_image.png);
@@ -10,8 +13,7 @@
 }
 
 #home, #calculator, #banks, #insurance, #correction{
-				background:url('../img/black_woven_seamless_tile.jpg');				
-				background-repeat:repeat;
+				background-color:#333;
 			}
 .title{
 	font-face:sans-serif;
@@ -20,12 +22,6 @@
 }
 			h1, h2, h3{
 				text-rendering:optimizeLegibility;
-			}
-			.headerImage{
-				width:150px;
-				height:25px;
-				-webkit-background-size:150px 25px;
-				background:url(../img/title_image_low.png);
 			}
 			p.disclaimer{
 			color:#FFF;

@@ -1,78 +1,47 @@
+.headerImage{
+	background-image:url(../img/title_image_low.png);
+	width:150px;
+	height:25px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+	.headerImage{
+		background-image:url(../img/title_image.png);
+		-webkit-background-size: 150px 25px;
+		width:150px;
+		height:25px;
+	}		
+}
+hr{
+	background-image:url(../img/notification_divider_image.png);
+	height:1px;
+	border:none;
+	margin-top:-5px;
+}
+.button-container{
+	position:absolute;
+	left:0px;
+	bottom:60px;
+	width:100%;
+}
+.button-spacer{
+	height:5px;	
+}
+h1, h2, h3{
+	text-rendering:optimizeLegibility;
+}
+p.disclaimer{
+	color:#FFF;
+	font-weight:bold;
+	font-size:small;
+}
+#jinfo {
+	display: none;
+}
+#jinfo.ui-page-active {
+	display: block;
+}
 .footer-wrapper{
 	position:absolute;
 	bottom:0px;
 	width:100%;
 }
-@media screen and (-webkit-device-pixel-ratio: 2){
-				.headerImage{
-					background:url(../img/title_image.png);
-				}
-				#home, #calculator, #banks, #insurance, #correction{
-				background:url('../img/background_grad.png');				
-				background-repeat:no-repeat;
-				}				
-}
-
-#home, #calculator, #banks, #insurance, #correction{
-				background:url('../img/background_grad_low.png');
-				width:320px;
-				height:480px;
-				-webkit-background-size:320px 480px;				
-				background-repeat:no-repeat;
-			}
-			h1, h2, h3{
-				text-rendering:optimizeLegibility;
-			}
-			.headerImage{
-				width:150px;
-				height:25px;
-				-webkit-background-size:150px 25px;
-				background:url(../img/title_image_low.png);
-			}
-			p.disclaimer{
-			color:#FFF;
-			font-weight:bold;
-			font-size:small;
-			}
-			#jinfo {
-				display: none;
-			}
-			#jinfo.ui-page-active {
-				display: block;
-			}	
-	  		.finance_calc{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/pmt_calc_nofocus.png);
-	  			
-	  		}
-  			.finance_calc:hover{
-	  			background-image:url(../img/pmt_calc_focus.png);
-	  		}
-	  		.bank_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/bank_directory_nofocus.png);
-	  			
-	  		}
-  			.bank_dir:hover{
-	  			background-image:url(../img/bank_directory_focus.png);
-	  		}
-	  		.ins_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/insurance_directory_nofocus.png);
-	  			
-	  		}
-  			.ins_dir:hover{
-	  			background-image:url(../img/insurance_directory_focus.png);
-	  		}
-	  		.submit{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/submit_correction_nofocus.png);
-	  			
-	  		}
-  			.submit:hover{
-	  			background-image:url(../img/submit_correction_focus.png);
-	  		}	  

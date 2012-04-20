@@ -1,77 +1,47 @@
-.footer-wrapper{
-	position:absolute;
-	bottom:0px;
-	width:100%;
-}
 .headerImage{
 	background-image:url(../img/title_image_low.png);
 	width:150px;
 	height:25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2){
-				.headerImage{
-					background-image:url(../img/title_image.png);
-					-webkit-background-size: 150px 25px;
-					width:150px;
-					height:25px;
-				}		
+	.headerImage{
+		background-image:url(../img/title_image.png);
+		-webkit-background-size: 150px 25px;
+		width:150px;
+		height:25px;
+	}		
 }
-
-#home, #calculator, #banks, #insurance, #correction{
-				background-color:#333;
-			}
-.title{
-	font-face:sans-serif;
-	color:#fff;
+hr{
+	background-image:url(../img/notification_divider_image.png);
+	height:1px;
+	border:none;
+	margin-top:0px;
+}
+.button-container{
+	position:absolute;
+	left:0px;
+	bottom:60px;
+	width:100%;
+}
+.button-spacer{
+	height:5px;	
+}
+h1, h2, h3{
+	text-rendering:optimizeLegibility;
+}
+p.disclaimer{
+	color:#FFF;
 	font-weight:bold;
+	font-size:small;
 }
-			h1, h2, h3{
-				text-rendering:optimizeLegibility;
-			}
-			p.disclaimer{
-			color:#FFF;
-			font-weight:bold;
-			font-size:small;
-			}
-			#jinfo {
-				display: none;
-			}
-			#jinfo.ui-page-active {
-				display: block;
-			}	
-	  		.finance_calc{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/pmt_calc_nofocus.png);
-	  			
-	  		}
-  			.finance_calc:hover{
-	  			background-image:url(../img/pmt_calc_focus.png);
-	  		}
-	  		.bank_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/bank_directory_nofocus.png);
-	  			
-	  		}
-  			.bank_dir:hover{
-	  			background-image:url(../img/bank_directory_focus.png);
-	  		}
-	  		.ins_dir{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/insurance_directory_nofocus.png);
-	  			
-	  		}
-  			.ins_dir:hover{
-	  			background-image:url(../img/insurance_directory_focus.png);
-	  		}
-	  		.submit{
-	  			width:120px;
-	  			height:120px;
-	  			background-image:url(../img/submit_correction_nofocus.png);
-	  			
-	  		}
-  			.submit:hover{
-	  			background-image:url(../img/submit_correction_focus.png);
-	  		}	  
+#jinfo {
+	display: none;
+}
+#jinfo.ui-page-active {
+	display: block;
+}
+.footer-wrapper{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}

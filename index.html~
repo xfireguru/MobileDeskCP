@@ -10,28 +10,37 @@
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	</head>
 	<body>
-		<div data-role="page" id="home" data-theme="b">
+		<div data-role="page" id="home" data-theme="a">
 			<div data-role="header">
 				<img class="headerImage" src="img/transparent.png">
 			</div><!-- /header -->
+			<hr class="red-divider">
 			<div data-role="content">
-				<div class="ui-grid-a" align="center">
-					<div class="ui-block-a"><a href="#calculator" data-transition="flip"><img class="finance_calc" src="img/transparent.png"></a></div>
-					<div class="ui-block-b"><a href="#banks" data-transition="flip"><img class="bank_dir" src="img/transparent.png"></a></div>				
-					<div class="ui-block-a"><a href="#insurance" data-transition="flip"><img class="ins_dir" src="img/transparent.png"></a></div>
-					<div class="ui-block-b"><a href="#correction" data-transition="flip"><img class="submit" src="img/transparent.png"></a></div>				
-				</div><!-- /grid -->
+				<div class="button-container">								
+				<a href="#calculator"><button data-theme="b">Calculator</button></a>
+				<div class="button-spacer"></div>				
+				<a href="#banks"><button data-theme="b">Bank Directory</button></a>
+				<div class="button-spacer"></div>				
+				<a href="#insurance"><button data-theme="b">Insurance</button></a>		
+				</div>
 			</div><!-- /content -->
 			<div class='footer-wrapper'>			
-				<div data-role="footer" data-theme="a">
-						<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
+				<div data-role="footer" class="ui-bar" data-theme="a">
+					<div class="ui-grid-a" align="left">
+						<div class="ui-block-a">
+							<small>Copyright &copy; 2012 <a href="http://www.mydigitaldealer.com">MyDigtialDealer, LLC.</a></small>
+						</div>
+						<div class="ui-block-b">
+							<a href="#correction" data-role="button" data-icon="check">Correction</a>
+						</div>
+					</div>
 				</div><!-- /footer -->
 			</div><!-- footer-wrapper -->
 		</div><!-- /page -->
 		
 		<div data-role="page" id="calculator" data-add-back-btn="true" data-theme="a">
 			<div data-role="header">
-				<h3>Finance Calculator</h3>			
+				<h1>Finance Calculator</h1>			
 			</div>
 			<div data-role="content">
 				<div data-role="collapsible" data-collapsed="false">

@@ -15,7 +15,7 @@ hr{
 	background-image:url(../img/notification_divider_image.png);
 	height:1px;
 	border:none;
-	margin-top:-5px;
+	margin-top:0px;
 }
 .button-container{
 	position:absolute;
@@ -25,6 +25,18 @@ hr{
 }
 .button-spacer{
 	height:5px;	
+}
+.ui-icon-myapp-pmt {
+	background:url(../img/plus_alt.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
+}
+.ui-icon-myapp-bank{
+	background-image: url(../img/list.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
+}
+.ui-icon-myapp-ins{
+	background-image: url(../img/umbrella.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
 }
 h1, h2, h3{
 	text-rendering:optimizeLegibility;

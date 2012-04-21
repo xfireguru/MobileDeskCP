@@ -26,6 +26,18 @@ hr{
 .button-spacer{
 	height:5px;	
 }
+.ui-icon-myapp-pmt {
+	background:url(../img/plus_alt.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
+}
+.ui-icon-myapp-bank{
+	background: url(../img/list.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
+}
+.ui-icon-myapp-ins{
+	background: url(../img/umbrella.svg) no-repeat scroll 0 0 transparent;
+	background-size:18px 18px;
+}
 h1, h2, h3{
 	text-rendering:optimizeLegibility;
 }
